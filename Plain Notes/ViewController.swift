@@ -22,7 +22,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         table.dataSource = self
         table.delegate = self
         self.title = "Plain Notes"
+        
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.navigationItem.largeTitleDisplayMode = .always
         let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addNote))
         self.navigationItem.rightBarButtonItem = addButton
         self.navigationItem.leftBarButtonItem = editButtonItem

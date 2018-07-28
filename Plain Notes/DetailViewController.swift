@@ -16,6 +16,7 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.text = text
+        self.navigationItem.largeTitleDisplayMode = .never
         // Do any additional setup after loading the view.
     }
 
